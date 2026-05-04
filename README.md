@@ -1,57 +1,61 @@
-# Font Manager CLI
+# 🔤 Windows Font Manager CLI
 
-A powerful, interactive Command Line Interface (CLI) utility built with Python that allows you to easily manage, search, and swap your Windows system fonts. It specifically targets and replaces the default "Segoe UI" font across the Windows operating system by safely modifying the registry.
+![OS](https://img.shields.io/badge/OS-Windows-blue?style=flat-square&logo=windows)
+![Python](https://img.shields.io/badge/Python-3.6%2B-brightgreen?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-## ✨ Features
+A sleek, interactive Command Line Interface (CLI) to easily manage, search, and swap your default Windows system font (Segoe UI). Built entirely in Python using `prompt_toolkit`.
 
-- **Interactive UI:** A rich, keyboard-navigable terminal interface built with `prompt_toolkit`.
-- **Search & Browse:** Quickly search through all installed fonts on your system or browse them via a categorized list.
-- **Custom Themes:** Choose from several professional color schemes (e.g., Midnight Slate, Deep Dark, Nordic Frost, Gruvbox Retro) to personalize your CLI experience.
-- **Safe Restoration:** A built-in 1-click option to restore the default Windows Segoe UI font settings.
-- **Persistent Configuration:** Remembers your visual theme preferences between sessions.
+---
 
-## 🚀 Prerequisites
+## ✨ Key Features
 
-- **OS:** Windows (The script relies on the Windows Registry via the `winreg` module).
-- **Python:** Python 3.6 or higher.
-- **Dependencies:** The `prompt_toolkit` library is required for the interactive UI.
+- **⌨️ Interactive UI:** Navigate entirely via quick keyboard shortcuts.
+- **🔍 Smart Search:** Instantly find and filter your installed system fonts.
+- **🎨 Custom Themes:** Personalize your CLI with professional color palettes (Midnight Slate, Deep Dark, Nordic Frost, etc.).
+- **↩️ Safe Restore:** 1-click option to instantly revert to default Windows settings.
+- **💾 Persistent Config:** Automatically saves your visual preferences between sessions.
 
-## 🛠️ Installation
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Subankar-Dey/font_manager_cli.git
-   cd font_manager_cli
-   ```
+## ⚙️ Quick Start
 
-2. **Install the required dependencies:**
-   ```bash
-   pip install prompt_toolkit
-   ```
+Follow these short steps to get up and running:
 
-## 💻 Usage
+**1. Clone the repository**
+```bash
+git clone https://github.com/Subankar-Dey/font_manager_cli.git
+cd font_manager_cli
+```
 
-Run the script using Python:
+**2. Install requirements**
+```bash
+pip install -r requirements.txt
+```
 
+**3. Run the application** *(Must run terminal as Administrator)*
 ```bash
 python font_manager.py
 ```
 
-### Hotkeys & Navigation
-- **[S]** - Search for a specific font
-- **[B]** - Browse the complete font repository
-- **[T]** - Open Visual Themes menu
-- **[R]** - Restore default Windows fonts
-- **[E]** or **[Q]** - Exit the application
-- **[Tab] / [Shift-Tab]** - Navigate between buttons and inputs
-- **[Enter]** or **[O]** - Confirm selection
-- **[C]** - Cancel/Go Back
+---
 
-## ⚠️ Important Notes
+## 🎮 Navigation & Hotkeys
 
-1. **Administrator Privileges:** Modifying system fonts requires altering the Windows Registry. Ensure you are running your terminal/command prompt as an **Administrator**.
-2. **System Restart:** After applying a new font or restoring the default font, you **must restart your computer** for the changes to take effect across the entire operating system.
+| Key | Action |
+| :--- | :--- |
+| `[S]` | Search fonts |
+| `[B]` | Browse all fonts |
+| `[T]` | Change UI Theme |
+| `[R]` | Restore default fonts |
+| `[E]` / `[Q]` | Exit application |
+| `[Tab]` | Move to next item |
+| `[Enter]` / `[O]` | Confirm / OK |
+| `[C]` | Cancel / Back |
 
-## 📄 License
+---
 
-This project is open-source and available under the MIT License.
+## ⚠️ Important Requirements
+
+*   🛡️ **Administrator Privileges:** Modifying system fonts changes the Windows Registry. You *must* open your terminal/command prompt as an Administrator to apply changes.
+*   🔄 **System Restart:** After applying a new font or restoring defaults, you must restart your computer for the changes to take effect across the entire OS.
